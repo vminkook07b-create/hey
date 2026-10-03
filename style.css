@@ -1,404 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happy Boyfriends Day 💕</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <audio id="bgMusic" autoplay loop>
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    <meta
+      name="description"
+      content="A premium romantic Boyfriends Day surprise for the love of your life."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="bgMusic" autoplay loop playsinline>
+      <source
+        src="https://cdn.pixabay.com/download/audio/2022/11/08/audio_742056d19d.mp3?filename=romantic-ambient-123060.mp3"
+        type="audio/mpeg"
+      />
     </audio>
 
-    <div class="floating-elements">
-        <span class="float-emoji">✨</span>
-        <span class="float-emoji">💕</span>
-        <span class="float-emoji">🌸</span>
-        <span class="float-emoji">⭐</span>
-        <span class="float-emoji">💫</span>
-        <span class="float-emoji">🦋</span>
-        <span class="float-emoji">✨</span>
-        <span class="float-emoji">💕</span>
+    <div class="ambient ambient-left">✦</div>
+    <div class="ambient ambient-right">❤</div>
+    <div class="floating-petals">
+      <span>✦</span>
+      <span>❤</span>
+      <span>❀</span>
+      <span>✧</span>
+      <span>♡</span>
+      <span>✦</span>
+      <span>❤</span>
+      <span>❀</span>
+      <span>✧</span>
+      <span>♡</span>
     </div>
 
-    <div class="slide slide-1 active">
-        <div class="content">
-            <h1 class="welcome-title">Here's something special for you ✨</h1>
-            <p class="welcome-subtitle">Tap or scroll to continue...</p>
-            <button class="continue-btn" onclick="goToSlide(2)">💕 Open 💕</button>
+    <section class="slide active slide-hero">
+      <div class="glass-card hero-card">
+        <p class="eyebrow">for my favorite person</p>
+        <h1>Here's something special for you ✨</h1>
+        <p class="hero-copy">
+          A little world made of love, memories, and all the reasons you mean the world to me.
+        </p>
+        <button class="primary-btn" onclick="goToSlide(2)">Open my letter 💌</button>
+      </div>
+    </section>
+
+    <section class="slide slide-letter">
+      <div class="letter-shell">
+        <div class="paper-letter">
+          <div class="paper-top"></div>
+          <div class="letter-heading">
+            <span class="mini-tag">Happy Boyfriends Day</span>
+            <h2>HAPPY BOYFRIENDS DAY MY BABY</h2>
+          </div>
+
+          <div class="letter-body">
+            <p>
+              Hey, happy boyfriends day babe. I know I don't say it enough but you're the best boyfriend in the entire world and I love you sooo much that I can never express in words. You're the best thing that ever happened to me and I cannot express in words how much I am grateful for your presence in my life.
+            </p>
+            <p>
+              You're the air I breathe, the water I need to survive, you're the light in my dark lonely world. I know I can be annoying sometimes and moody also and may not tell you everything but you should know that even if I get distant at times you are the one that gives me hope and courage to go through everything that happens.
+            </p>
+            <p>
+              But I hope you will try to tell me everything because I'm always here for you no matter what through your every high and low. I will never leave you no matter what. Just so you know you were there for me through everything and I love you for every bit of it. You are sooo perfect to me that words could never express. I hope you know that.
+            </p>
+            <div class="signature-wrap">
+              <p>Forever yours</p>
+              <span>Your wifeyy 💕</span>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="slide slide-2">
-        <div class="letter-container">
-            <div class="letter">
-                <div class="letter-header">
-                    <h2>HAPPY BOYFRIENDS DAY MY BABY 💕</h2>
-                </div>
-                <div class="letter-content">
-                    <p class="letter-text">
-                        Hey, happy boyfriends day babe. I know I don't say it enough but you're the best boyfriend in the entire world and I love you sooo much that I can never express in words. You're the best thing that ever happened to me and I cannot express in words how much I am grateful for your presence in my life.
-                    </p>
-                    <p class="letter-text">
-                        You're the air I breathe, the water I need to survive, you're the light in my dark lonely world. I know I can be annoying sometimes and moody also and may not tell you everything but you should know that even if I get distant at times you are the one that gives me hope and courage to go through everything that happens.
-                    </p>
-                    <p class="letter-text">
-                        But I hope you will try to tell me everything because I'm always here for you no matter what through your every high and low. I will never leave you no matter what. Just so you know you were there for me through everything and I love you for every bit of it. You are sooo perfect to me that words could never express. I hope you know that.
-                    </p>
-                    <p class="letter-signature">
-                        Forever yours 💕<br>
-                        Your Baby 🌸
-                    </p>
-                </div>
-            </div>
+      <div class="nav-row">
+        <button class="ghost-btn" onclick="goToSlide(1)">← Back</button>
+        <button class="primary-btn" onclick="goToSlide(3)">Next →</button>
+      </div>
+    </section>
+
+    <section class="slide slide-memories">
+      <div class="section-head">
+        <p class="eyebrow">our memories</p>
+        <h2>Our beautiful moments 📸</h2>
+      </div>
+
+      <div class="polaroid-grid">
+        <div class="polaroid-card">
+          <div class="polaroid-photo photo-one">
+            <label class="upload-label" for="photo1">+</label>
+            <input id="photo1" type="file" accept="image/*" onchange="addPhoto(this, 1)" />
+          </div>
+          <input class="caption" type="text" maxlength="50" placeholder="Add a caption..." />
         </div>
-        <div class="nav-buttons">
-            <button class="nav-btn prev-btn" onclick="goToSlide(1)">← Back</button>
-            <button class="nav-btn next-btn" onclick="goToSlide(3)">Next →</button>
+
+        <div class="polaroid-card">
+          <div class="polaroid-photo photo-two">
+            <label class="upload-label" for="photo2">+</label>
+            <input id="photo2" type="file" accept="image/*" onchange="addPhoto(this, 2)" />
+          </div>
+          <input class="caption" type="text" maxlength="50" placeholder="Add a caption..." />
         </div>
-    </div>
 
-    <div class="slide slide-3">
-        <div class="content">
-            <h2 class="slide-title">Our Beautiful Memories 📸</h2>
-            <p class="subtitle-text">Add your favorite photos with captions</p>
-            
-            <div class="polaroid-gallery" id="polaroidGallery">
-                <div class="polaroid-slot" id="polaroid1">
-                    <div class="polaroid">
-                        <div class="polaroid-image" style="background: linear-gradient(135deg, #ff69b4, #ff1493);">
-                            <input type="file" class="photo-input" accept="image/*" onchange="addPhoto(this, 1)">
-                            <p class="photo-placeholder">Click to add photo</p>
-                        </div>
-                        <input type="text" class="photo-caption" placeholder="Add caption..." maxlength="50">
-                    </div>
-                </div>
-
-                <div class="polaroid-slot" id="polaroid2">
-                    <div class="polaroid">
-                        <div class="polaroid-image" style="background: linear-gradient(135deg, #ff69b4, #ffc0cb);">
-                            <input type="file" class="photo-input" accept="image/*" onchange="addPhoto(this, 2)">
-                            <p class="photo-placeholder">Click to add photo</p>
-                        </div>
-                        <input type="text" class="photo-caption" placeholder="Add caption..." maxlength="50">
-                    </div>
-                </div>
-
-                <div class="polaroid-slot" id="polaroid3">
-                    <div class="polaroid">
-                        <div class="polaroid-image" style="background: linear-gradient(135deg, #ffc0cb, #ffb6c1);">
-                            <input type="file" class="photo-input" accept="image/*" onchange="addPhoto(this, 3)">
-                            <p class="photo-placeholder">Click to add photo</p>
-                        </div>
-                        <input type="text" class="photo-caption" placeholder="Add caption..." maxlength="50">
-                    </div>
-                </div>
-
-                <div class="polaroid-slot" id="polaroid4">
-                    <div class="polaroid">
-                        <div class="polaroid-image" style="background: linear-gradient(135deg, #ff1493, #ff69b4);">
-                            <input type="file" class="photo-input" accept="image/*" onchange="addPhoto(this, 4)">
-                            <p class="photo-placeholder">Click to add photo</p>
-                        </div>
-                        <input type="text" class="photo-caption" placeholder="Add caption..." maxlength="50">
-                    </div>
-                </div>
-            </div>
-
-            <div class="nav-buttons">
-                <button class="nav-btn prev-btn" onclick="goToSlide(2)">← Back</button>
-                <button class="nav-btn next-btn" onclick="goToSlide(4)">Next →</button>
-            </div>
+        <div class="polaroid-card">
+          <div class="polaroid-photo photo-three">
+            <label class="upload-label" for="photo3">+</label>
+            <input id="photo3" type="file" accept="image/*" onchange="addPhoto(this, 3)" />
+          </div>
+          <input class="caption" type="text" maxlength="50" placeholder="Add a caption..." />
         </div>
-    </div>
 
-    <div class="slide slide-4">
-        <div class="content">
-            <h2 class="slide-title">1000 Reasons Why I Love You 💕</h2>
-            <div class="reasons-scroll" id="reasonsScroll"></div>
-            <div class="nav-buttons">
-                <button class="nav-btn prev-btn" onclick="goToSlide(3)">← Back</button>
-                <button class="nav-btn next-btn" onclick="goToSlide(5)">Next →</button>
-            </div>
+        <div class="polaroid-card">
+          <div class="polaroid-photo photo-four">
+            <label class="upload-label" for="photo4">+</label>
+            <input id="photo4" type="file" accept="image/*" onchange="addPhoto(this, 4)" />
+          </div>
+          <input class="caption" type="text" maxlength="50" placeholder="Add a caption..." />
         </div>
-    </div>
+      </div>
 
-    <div class="slide slide-5">
-        <div class="content">
-            <h2 class="slide-title">Our Favorite Songs 🎵</h2>
-            <div class="music-description">
-                <p>Add Ed Sheeran songs and your favorite tracks</p>
-            </div>
-            <div class="cd-gallery" id="cdGallery">
-                <div class="cd-slot">
-                    <div class="cd">
-                        <div class="cd-disc"></div>
-                        <input type="text" class="song-title" placeholder="Song name">
-                        <input type="text" class="song-artist" placeholder="Artist">
-                    </div>
-                </div>
-                <div class="cd-slot">
-                    <div class="cd">
-                        <div class="cd-disc"></div>
-                        <input type="text" class="song-title" placeholder="Song name">
-                        <input type="text" class="song-artist" placeholder="Artist">
-                    </div>
-                </div>
-                <div class="cd-slot">
-                    <div class="cd">
-                        <div class="cd-disc"></div>
-                        <input type="text" class="song-title" placeholder="Song name">
-                        <input type="text" class="song-artist" placeholder="Artist">
-                    </div>
-                </div>
-                <div class="cd-slot">
-                    <div class="cd">
-                        <div class="cd-disc"></div>
-                        <input type="text" class="song-title" placeholder="Song name">
-                        <input type="text" class="song-artist" placeholder="Artist">
-                    </div>
-                </div>
-            </div>
-            <div class="nav-buttons">
-                <button class="nav-btn prev-btn" onclick="goToSlide(4)">← Back</button>
-                <button class="nav-btn next-btn" onclick="goToSlide(6)">Next →</button>
-            </div>
+      <div class="nav-row">
+        <button class="ghost-btn" onclick="goToSlide(2)">← Back</button>
+        <button class="primary-btn" onclick="goToSlide(4)">Next →</button>
+      </div>
+    </section>
+
+    <section class="slide slide-reasons">
+      <div class="section-head">
+        <p class="eyebrow">1000 reasons</p>
+        <h2>Why I love you 💞</h2>
+      </div>
+
+      <div class="reasons-list" id="reasonsList"></div>
+
+      <div class="nav-row">
+        <button class="ghost-btn" onclick="goToSlide(3)">← Back</button>
+        <button class="primary-btn" onclick="goToSlide(5)">Next →</button>
+      </div>
+    </section>
+
+    <section class="slide slide-music">
+      <div class="section-head">
+        <p class="eyebrow">soundtrack to us</p>
+        <h2>Our favorite love songs 🎶</h2>
+      </div>
+
+      <div class="cd-grid">
+        <div class="cd-card">
+          <div class="cd-disc"></div>
+          <div class="cd-meta">
+            <input type="text" value="Perfect" placeholder="Song" />
+            <input type="text" value="Ed Sheeran" placeholder="Artist" />
+          </div>
         </div>
-    </div>
 
-    <div class="slide slide-6">
-        <div class="content">
-            <h2 class="slide-title">One Last Special Thing 💌</h2>
-            
-            <div class="envelope-wrapper">
-                <div class="envelope-outer" id="envelopeOuter">
-                    <div class="envelope-label">Open it baby 💋</div>
-                    <div class="envelope-flap" id="envelopeFlap" onclick="openEnvelope()"></div>
-                </div>
-            </div>
-
-            <div class="envelope-content" id="envelopeContent" style="display: none;">
-                <div class="final-polaroid">
-                    <div class="final-photo-section">
-                        <input type="file" class="final-photo-input" accept="image/*" onchange="addFinalPhoto(this)">
-                        <div class="final-photo-placeholder" id="finalPhotoPlaceholder">
-                            <p>📸 Click to add your photo 📸</p>
-                        </div>
-                        <img id="finalPhoto" style="display: none; max-width: 100%; border-radius: 5px;">
-                    </div>
-                    <div class="final-message-section">
-                        <textarea class="final-message-input" placeholder="Your message here..." maxlength="200">Created with love 💕 - Happy Boyfriends Day Tillu! 😘 I love you so much!</textarea>
-                    </div>
-                </div>
-                <div class="kisses-animation" id="kissesContainer"></div>
-            </div>
-
-            <div class="nav-buttons">
-                <button class="nav-btn prev-btn" onclick="goToSlide(5)">← Back</button>
-                <button class="nav-btn save-btn" onclick="saveSite()">Save & Get Link 🔗</button>
-            </div>
+        <div class="cd-card">
+          <div class="cd-disc"></div>
+          <div class="cd-meta">
+            <input type="text" value="Thinking Out Loud" placeholder="Song" />
+            <input type="text" value="Ed Sheeran" placeholder="Artist" />
+          </div>
         </div>
-    </div>
 
-    <button class="music-toggle" id="musicToggle" onclick="toggleMusic()">🔊</button>
+        <div class="cd-card">
+          <div class="cd-disc"></div>
+          <div class="cd-meta">
+            <input type="text" value="Lover" placeholder="Song" />
+            <input type="text" value="Taylor Swift" placeholder="Artist" />
+          </div>
+        </div>
+
+        <div class="cd-card">
+          <div class="cd-disc"></div>
+          <div class="cd-meta">
+            <input type="text" value="Our Song" placeholder="Song" />
+            <input type="text" value="Your Playlist" placeholder="Artist" />
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-row">
+        <button class="ghost-btn" onclick="goToSlide(4)">← Back</button>
+        <button class="primary-btn" onclick="goToSlide(6)">Next →</button>
+      </div>
+    </section>
+
+    <section class="slide slide-final">
+      <div class="final-envelope-wrap">
+        <div class="envelope-box" id="envelopeBox" onclick="openEnvelope()">
+          <div class="envelope-top" id="envelopeTop"></div>
+          <div class="envelope-label">Open it baby 💋</div>
+        </div>
+      </div>
+
+      <div class="final-modal" id="finalModal" aria-hidden="true">
+        <div class="final-modal-card">
+          <div class="final-image-box">
+            <label class="final-upload" for="finalPhoto">+</label>
+            <input id="finalPhoto" type="file" accept="image/*" onchange="addFinalPhoto(this)" />
+            <img id="finalPhotoPreview" alt="your photo" />
+          </div>
+          <textarea id="finalNote" rows="5">Created with love 💕 Happy Boyfriends Day Tillu! I love you so much and I always will 😘</textarea>
+          <div class="final-actions">
+            <button class="ghost-btn small" onclick="closeEnvelope()">Close</button>
+            <button class="primary-btn small" onclick="saveSite()">Save & copy link</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-row">
+        <button class="ghost-btn" onclick="goToSlide(5)">← Back</button>
+      </div>
+    </section>
+
+    <button class="sound-toggle" id="soundToggle" onclick="toggleMusic()" aria-label="Toggle music">
+      🔊
+    </button>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-																																																																																																																																																															       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
